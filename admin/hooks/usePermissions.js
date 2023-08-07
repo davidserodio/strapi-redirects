@@ -1,5 +1,5 @@
 import { useRBAC } from '@strapi/helper-plugin';
-import pluginId from './helpers/pluginId';
+import pluginId from '../helpers/pluginId';
 
 const perms = { read: [{ action: `plugin::${pluginId}.read`, subject: null }] };
 
