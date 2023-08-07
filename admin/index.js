@@ -25,7 +25,13 @@ export default {
       },
       Component: async () => {
         return await import(/* webpackChunkName: "[request]" */ './screens/Redirect');
-      }
+      },
+      permissions: [
+        {
+          action: `plugin::${pluginId}.read`,
+          subject: null,
+        },
+      ]
     })
   },
 

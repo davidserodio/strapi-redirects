@@ -13,7 +13,11 @@ const contentApiContentTypeRoutes = require('./content-api/routes/content-api');
 const contentApiContentTypeController = require('./content-api/controllers/content-type');
 const contentApiContentTypeService = require('./content-api/services/content-type');
 
+// Bootstrap
+const bootstrap = require('./bootstrap');
+
 module.exports = {
+  bootstrap,
   config,
   contentTypes: {
     redirect: {
