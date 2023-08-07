@@ -1,4 +1,4 @@
-import pluginId from './util/pluginId';
+const pluginId = require('./util/pluginId');
 
 module.exports = {
   default: async ({ strapi }) => {
